@@ -73,6 +73,7 @@ cd ..
 $DOWNLOAD http://mirrors.ctan.org/fonts/minionpro/enc-2.000.zip
 $DOWNLOAD http://mirrors.ctan.org/fonts/minionpro/metrics-base.zip
 $DOWNLOAD http://mirrors.ctan.org/fonts/minionpro/metrics-full.zip
+$DOWNLOAD http://mirrors.ctan.org/fonts/minionpro/metrics-opticals.zip
 $DOWNLOAD http://mirrors.ctan.org/fonts/minionpro/scripts.zip
 
 ## This will make the otf directory, among other things.
@@ -94,6 +95,7 @@ cd $DEST
 sudo unzip $SRC/enc-2.000.zip
 sudo unzip $SRC/metrics-base.zip
 sudo unzip $SRC/metrics-full.zip
+sudo unzip $SRC/metrics-opticals.zip
 cd $SRC
 
 sudo mktexlsr
