@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x -e
 
 # Hao Wang <haowang@ece.utoronto.ca>
 # http://www.haow.ca/
@@ -87,7 +87,7 @@ cp $MINIONSRC/Minion*otf otf/
 ./convert.sh
 
 ## Copy the pfb files to where they belong:
-mkdir -p $DEST/fonts/type1/adobe/MinionPro
+sudo mkdir -p $DEST/fonts/type1/adobe/MinionPro
 sudo cp pfb/*.pfb $DEST/fonts/type1/adobe/MinionPro
 
 SRC=`pwd`
